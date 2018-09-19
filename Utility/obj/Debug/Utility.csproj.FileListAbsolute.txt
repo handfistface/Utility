@@ -1,0 +1,6 @@
+D:\App_Dev\Utility\Utility\bin\Debug\Utility.dll
+D:\App_Dev\Utility\Utility\bin\Debug\Utility.pdb
+D:\App_Dev\Utility\Utility\obj\Debug\Utility.csprojAssemblyReference.cache
+D:\App_Dev\Utility\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
+D:\App_Dev\Utility\Utility\obj\Debug\Utility.dll
+D:\App_Dev\Utility\Utility\obj\Debug\Utility.pdb

@@ -1,0 +1,10 @@
+
+****
+0.1
+****
+Debug branch, initial development
+Work done
+	09-18-2018
+		Wrote the method Util.DeleteOldFiles(), integrated into the LogManager class to delete old text files
+	09-17-2018 - LogManager is created
+	09-17-2018 - Util is created
