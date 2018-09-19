@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2018.7.8.0" projectFile="D:\App_Dev\Utility\SandcastleDoc\SCUtility.shfbproj" started="9/19/2018 7:18:50 PM">
+<buildStep step="Initializing">
+Finding tools...
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
+Searching for HTML Help 1 compiler...
+Found HTML Help 1 compiler in &#39;C:\Program Files (x86)\HTML Help Workshop\&#39;
+Locating components in the following folder(s):
+    D:\App_Dev\Utility\SandcastleDoc
+    C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins\
+    C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
+Using framework reflection data for &#39;.NET Framework 4.5&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
+Using presentation style &#39;VS2013&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013&#39;
+Loading and initializing plug-ins...
+Lightweight Website Style Version 2018.7.8.0
+Copyright &#169; 2006-2018, Eric Woodruff, All Rights Reserved
+Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: D:\App_Dev\Utility\Utility\bin\Release\Utility.dll
+    Found assembly &#39;D:\App_Dev\Utility\Utility\bin\Release\Utility.dll&#39;
+Source: D:\App_Dev\Utility\Utility\bin\Debug\Utility.xml
+Source: D:\App_Dev\Utility\Utility\bin\Debug\Utility.dll
+    Found assembly &#39;D:\App_Dev\Utility\Utility\bin\Debug\Utility.dll&#39;
+
+Copying XML comments files
+    D:\App_Dev\Utility\Utility\bin\Debug\Utility.xml -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Utility.xml
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (en-US, English (United States))...
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+</plugIn>    Last step completed in 00:00:00.0110
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00.0030
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe - GenerateRefInfo.proj]
+Build started 9/19/2018 7:18:50 PM.
+Project &quot;D:\App_Dev\Utility\SandcastleDoc\Help\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
+PrepareForBuild:
+  Creating directory &quot;obj\Debug\&quot;.
+GenerateRefInfo:
+  MRefBuilder (v2018.7.8.0)
+  Copyright c 2006-2018, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2018, Eric Woodruff, All Rights Reserved.
+  No source code context base path specified.  Source context information is unavailable.
+  Loaded 2 assemblies for reflection and 1 dependency assemblies.
+  Wrote information on 1 namespaces, 6 types, and 18 members
+  Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
+  XslTransform (v2018.7.8.0)
+  Copyright c 2006-2018, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2018, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
+Done Building Project &quot;D:\App_Dev\Utility\SandcastleDoc\Help\Working\GenerateRefInfo.proj&quot; (default targets).
+    Last step completed in 00:00:00.5825
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe - TransformManifest.proj]
+Build started 9/19/2018 7:18:51 PM.
+Project &quot;D:\App_Dev\Utility\SandcastleDoc\Help\Working\TransformManifest.proj&quot; on node 1 (default targets).
+TransformManifest:
+  XslTransform (v2018.7.8.0)
+  Copyright c 2006-2018, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2018, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Copying file from &quot;reflection.xml&quot; to &quot;reflection.nofilenames&quot;.
+  XslTransform (v2018.7.8.0)
+  Copyright c 2006-2018, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2018, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\AddFilenames.xsl&#39;.
+  XslTransform (v2018.7.8.0)
+  Copyright c 2006-2018, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2018, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+Done Building Project &quot;D:\App_Dev\Utility\SandcastleDoc\Help\Working\TransformManifest.proj&quot; (default targets).
+    Last step completed in 00:00:00.3690
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00.0090
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+No additional content to copy
+    Last step completed in 00:00:00.0010
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe - GenerateIntermediateTOC.proj]
+Build started 9/19/2018 7:18:51 PM.
+Project &quot;D:\App_Dev\Utility\SandcastleDoc\Help\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
+GenerateIntermediateTOC:
+  XslTransform (v2018.7.8.0)
+  Copyright c 2006-2018, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2018, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
+Done Building Project &quot;D:\App_Dev\Utility\SandcastleDoc\Help\Working\GenerateIntermediateTOC.proj&quot; (default targets).
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:00.1646
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:00.1421
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+D:\App_Dev\Utility\SandcastleDoc\Help\Working\sandcastle.config
+  Updating reference topic configurations.
+  No conceptual content.  Removing conceptual content components.
+    Last step completed in 00:00:00.0040
+</buildStep>
+<buildStep step="BuildTopics">
+Building help topics...
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe - BuildTopics.proj]
+Build started 9/19/2018 7:18:52 PM.
+Project &quot;D:\App_Dev\Utility\SandcastleDoc\Help\Working\BuildTopics.proj&quot; on node 1 (default targets).
+BuildTopics:
+  BuildAssembler (v2018.7.8.0)
+  Copyright c 2006-2018, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2018, Eric Woodruff, All Rights Reserved.
+  Loading configuration...
+  Processing topics...
+BuildAssembler : warning : ShowMissingComponent: [N:Utility] Missing &lt;summary&gt; documentation [D:\App_Dev\Utility\SandcastleDoc\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Utility.DLL.VERSION] Missing &lt;summary&gt; documentation [D:\App_Dev\Utility\SandcastleDoc\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Utility.Util.DeleteOldFiles(System.String,System.UInt32,System.String)] Missing &lt;summary&gt; documentation [D:\App_Dev\Utility\SandcastleDoc\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Utility.Util.DeleteOldFiles(System.String,System.UInt32,System.String)] Missing &lt;returns&gt; documentation [D:\App_Dev\Utility\SandcastleDoc\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Utility.Util.DeleteOldFiles(System.String,System.UInt32,System.String)] Missing &lt;param name=&quot;s_PathToDelete&quot;/&gt; documentation [D:\App_Dev\Utility\SandcastleDoc\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Utility.Util.DeleteOldFiles(System.String,System.UInt32,System.String)] Missing &lt;param name=&quot;ui_DayDifference&quot;/&gt; documentation [D:\App_Dev\Utility\SandcastleDoc\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Utility.Util.DeleteOldFiles(System.String,System.UInt32,System.String)] Missing &lt;param name=&quot;s_SearchPattern&quot;/&gt; documentation [D:\App_Dev\Utility\SandcastleDoc\Help\Working\BuildTopics.proj]
+  Processed 16 topic(s)
+  7 warning(s)
+  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 4 of 15.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
+  ResolveReferenceLinksComponent: 2 entries added to the MSDN content ID cache.  New cache size: 8 entries
+Done Building Project &quot;D:\App_Dev\Utility\SandcastleDoc\Help\Working\BuildTopics.proj&quot; (default targets).
+    Last step completed in 00:00:07.6078
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+    Last step completed in 00:00:00.0010
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe - ExtractHtmlInfo.proj]
+Sandcastle Help File Builder and Tools, version 2018.7.8.0
+Copyright c 2006-2018, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
+
+Processing Help 1 files in D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1
+Processed 16 HTML files
+Sorting keywords and generating See Also indices
+Saving HTML Help 1 keyword index to D:\App_Dev\Utility\SandcastleDoc\Help\Working\Documentation.hhk
+Saving HTML Help 1 table of contents to D:\App_Dev\Utility\SandcastleDoc\Help\Working\Documentation.hhc
+    Last step completed in 00:00:00.1486
+</buildStep>
+<buildStep step="CopyStandardHelpContent">
+Copying standard help content...
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\AlertCaution.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\AlertNote.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\AlertSecurity.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\SectionCollapsed.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\SectionExpanded.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-Website.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; D:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\styles\branding.css
+    Last step completed in 00:00:00.1836
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating HTML Help 1 table of contents file...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateHelpFileIndex">
+Generating HTML Help 1 index file...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateHelpProject">
+Generating HTML Help 1 project file...
+    Last step completed in 00:00:00.0030
+</buildStep>
+<buildStep step="CompilingHelpFile">
+Compiling HTML Help 1 file...
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe - Build1xHelpFile.proj]
+  Microsoft HTML Help Compiler 4.74.8702
+  
+  
+  
+  Compiling d:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\Documentation.chm
+  
+  
+  
+  
+  
+  Compile time: 0 minutes, 0 seconds
+  
+  18	Topics
+  
+  151	Local links
+  
+  21	Internet links
+  
+  0	Graphics
+  
+  
+  
+  
+  
+  Created d:\App_Dev\Utility\SandcastleDoc\Help\Working\Output\HtmlHelp1\Documentation.chm, 68,709 bytes
+  
+  Compression decreased file by 144,527 bytes.
+  
+    Last step completed in 00:00:01.4764
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:00.0130
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 9/19/2018 7:19:01 PM.  Total time: 00:00:11.5054
+
+</buildStep>
+</shfbBuild>
