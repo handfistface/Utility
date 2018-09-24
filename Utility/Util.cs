@@ -67,12 +67,11 @@ namespace Utility
         #endregion public static void rtxtWriteLine(string s_Line)
         #region private static void WriteToTextBox(string s_Line, RichTextBox rtxt)
         /// <summary>
-        /// private static void WriteToTextBox(string s_Line, RichTextBox rtxt)
         /// Used to write to a text box, used mainly in rtxtWriteLine() to write where invoking is required
         /// Only used in this class, not accessible outside
         /// </summary>
         /// <param name="s_Line">The line to write</param>
-        /// <param name="rtxt">The rich text box to write to</param>
+        /// <param name="rtxt_ToWrite">The rich text box to write to</param>
         private static void WriteToTextBox(string s_Line, RichTextBox rtxt_ToWrite)
         {
             rtxt_Stat.Text += s_Line + Environment.NewLine;     //tack on a new line character onto the end of the text box
@@ -81,7 +80,6 @@ namespace Utility
 
         #region public static uint CalcDateDifferenceDays(DateTime dt1, DateTime dt2)
         /// <summary>
-        /// public static uint CalcDateDifferenceDays(DateTime dt1, DateTime dt2)
         /// Calculates the date difference between two datetimes
         /// Returns the difference in terms of days
         /// Aboslute difference so the return is unsigned and does not signify which DateTime is greater, for that use DateTime.Compare()
@@ -108,7 +106,6 @@ namespace Utility
 
         #region public static List<string> DeleteOldFiles(string s_PathToDelete, uint ui_DateDifference)
         /// <summary>
-        /// public static List<string> DeleteOldFiles(string s_PathToDelete, uint ui_DateDifference)
         /// Deletes old files in the specified directory
         /// Files older than the ui_DateDifference parameter will be deleted
         /// All of the deleted files will be returned in a string list

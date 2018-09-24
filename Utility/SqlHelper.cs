@@ -46,5 +46,39 @@ namespace Utility
             return b_DoesExist;     //return whether the DB exists
         }
         #endregion
+
+        #region public static bool DoesTableExist(SqlConnection sql_Conn, string s_TableName)
+        /// <summary>
+        /// Determines if a table exists for the passed connection, please not that the database will need previously assigned
+        /// The pass sql_Conn will be closed after the query has been performed
+        /// </summary>
+        /// <param name="sql_Conn">The sql connection to test, make sure it has a database selected</param>
+        /// <param name="s_TableName">The table name to check existance of</param>
+        /// <returns></returns>
+        public static bool DoesTableExist(SqlConnection sql_Conn, string s_TableName)
+        {
+            bool b_TableExists = false;     //indicates whether the table exists
+            //create the command string to check for table existance
+            string s_TableExistance = "SELECT CASE WHEN EXISTS((SELECT * FROM INFORMATION_SCHEUMA.TABLES WHERE table_name = '" + s_TableName + "')) THEN 1 ELSE 0 END";
+            //create the sql command to use for the interaction
+            using (SqlCommand sql_TableExistance = new SqlCommand(s_TableExistance, sql_Conn))
+            {
+                object o_QueryRes = sql_TableExistance.ExecuteScalar();     //execute the command and get the response
+                //determine if the query succeeded
+                if (o_QueryRes != null)
+                {
+                    int i_QueryRes = 0;
+                    if(int.TryParse(o_QueryRes.ToString(), out i_QueryRes))
+                    {
+                        //then the parse succeeded, the response is sitting in i_QueryRes
+                        if (i_QueryRes == 1)
+                            b_TableExists = true;       //then the table exists
+                    }
+                }
+                sql_TableExistance.Connection.Close();
+            }
+            return b_TableExists;       //return the state of the table existance
+        }
+        #endregion
     }
 }

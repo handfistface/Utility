@@ -14,6 +14,9 @@ namespace Utility
     /// </summary>
     public static class DLL
     {
+        /// <summary>
+        /// The version of the DLL
+        /// </summary>
         public const string VERSION = "0.1";        //the version of the DLL
     }
 }

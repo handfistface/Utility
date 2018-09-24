@@ -12,6 +12,11 @@
                 Holds constant information about the DLL that is being utilized
             </summary>
         </member>
+        <member name="F:Utility.DLL.VERSION">
+            <summary>
+            The version of the DLL
+            </summary>
+        </member>
         <member name="T:Utility.LogManager">
             <summary>
             Author: John Kirschner
@@ -88,6 +93,15 @@
             <param name="s_DatabaseName">The name of the DB</param>
             <returns>True if the DB exists, false if the DB does not exist</returns>
         </member>
+        <member name="M:Utility.SqlHelper.DoesTableExist(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+            Determines if a table exists for the passed connection, please not that the database will need previously assigned
+            The pass sql_Conn will be closed after the query has been performed
+            </summary>
+            <param name="sql_Conn">The sql connection to test, make sure it has a database selected</param>
+            <param name="s_TableName">The table name to check existance of</param>
+            <returns></returns>
+        </member>
         <member name="T:Utility.Util">
             <summary>
             Author: John Kirschner
@@ -112,16 +126,14 @@
         </member>
         <member name="M:Utility.Util.WriteToTextBox(System.String,System.Windows.Forms.RichTextBox)">
             <summary>
-            private static void WriteToTextBox(string s_Line, RichTextBox rtxt)
             Used to write to a text box, used mainly in rtxtWriteLine() to write where invoking is required
             Only used in this class, not accessible outside
             </summary>
             <param name="s_Line">The line to write</param>
-            <param name="rtxt">The rich text box to write to</param>
+            <param name="rtxt_ToWrite">The rich text box to write to</param>
         </member>
         <member name="M:Utility.Util.CalcDateDifferenceDays(System.DateTime,System.DateTime)">
             <summary>
-            public static uint CalcDateDifferenceDays(DateTime dt1, DateTime dt2)
             Calculates the date difference between two datetimes
             Returns the difference in terms of days
             Aboslute difference so the return is unsigned and does not signify which DateTime is greater, for that use DateTime.Compare()
@@ -130,6 +142,22 @@
             <param name="dt2">The second date time to calculate the difference for</param>
             <returns>An unsigned int indicating the difference in days, absolute value so there is no indication of which date time is greater</returns>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Utility.Util.DeleteOldFiles(System.String,System.UInt32,System.String)" -->
+        <member name="M:Utility.Util.DeleteOldFiles(System.String,System.UInt32,System.String)">
+            <summary>
+            Deletes old files in the specified directory
+            Files older than the ui_DateDifference parameter will be deleted
+            All of the deleted files will be returned in a string list
+            Is not recursive, if needed, functionality will be added later
+            If the target directory does not exist then this method will return
+            The file last write time is used to determine if the file will be deleted
+            </summary>
+            <param name="s_PathToDelete">The path that will be examined to delete old files</param>
+            <param name="ui_DayDifference">The day difference which indicates when a file should be deleted</param>
+            <param name="s_SearchPattern">The search pattern of files that will be examined, example: "*.log", defaults to "*" indicating all files will be examined</param>
+            <returns>A list of files that were deleted from the file system, only the file names, not the path</returns>
+            <exception cref="T:System.NullReferenceException">Thrown whenever a null parameter is passed to this method</exception>
+            <exception cref="T:System.IO.IOException">Can occur when a file is attempted to be deleted, a number of other exceptions can occur, if curious, please review System.IO.FileInfo.Delete()</exception>
+            <exception cref="T:System.ArgumentException">Can be thrown whenever the s_SearchPattern is not correct</exception>
+        </member>
     </members>
 </doc>
