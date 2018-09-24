@@ -70,6 +70,24 @@
             </summary>
             <returns>A string indicating the current time in the format HH_MM_SS</returns>
         </member>
+        <member name="T:Utility.SqlHelper">
+            <summary>
+            Class: SqlHelper
+            Author: John Kirschner
+            Date: 09-23-2018
+            Class Purpose:
+                This class helps support SQL functionality
+            </summary>
+        </member>
+        <member name="M:Utility.SqlHelper.DoesDBExist(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+            Determines if the passed database name actually exists
+            The passed SqlConnection will be closed after this query
+            </summary>
+            <param name="sql_Conn">The sql connection to use to determine if the DB exists</param>
+            <param name="s_DatabaseName">The name of the DB</param>
+            <returns>True if the DB exists, false if the DB does not exist</returns>
+        </member>
         <member name="T:Utility.Util">
             <summary>
             Author: John Kirschner
@@ -91,7 +109,6 @@
             This method prints s_Line to a rich text box, will print a new line at the end of the string automatically
             </summary>
             <param name="s_Line">The line that will be printed to the rich text box</param>
-            <exception cref="T:System.NullReferenceException">Thrown whenever the rtxt_Stat is null</exception>
         </member>
         <member name="M:Utility.Util.WriteToTextBox(System.String,System.Windows.Forms.RichTextBox)">
             <summary>

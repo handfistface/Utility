@@ -38,14 +38,15 @@ namespace Utility
         /// This method prints s_Line to a rich text box, will print a new line at the end of the string automatically
         /// </summary>
         /// <param name="s_Line">The line that will be printed to the rich text box</param>
-        /// <exception cref="NullReferenceException">Thrown whenever the rtxt_Stat is null</exception>
         public static void rtxtWriteLine(string s_Line)
         {
+            string s_ClassMethod = "Util.rtxtWriteLine()";
             //first do a sanity check that the rtxtWriteLine is looking a valid text box
             if (rtxt_Stat == null)
             {
                 //then an invalid text box is being accessed, this is an issue
-                throw new NullReferenceException("rtxt_Stat is not assigned to a valid value. Please call Init() before calling rtxtWriteLine()");
+                LogManager.WriteLine(s_ClassMethod + " -- rtxt_Stat is not assigned to a valid value. Please call Init() before calling rtxtWriteLine()");
+                return;     //return from the method
             }
             //then its fine to print a line of text
             //first check if Invoke is needed (if we are cross thread accessing the text box)

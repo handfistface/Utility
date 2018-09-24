@@ -43,7 +43,7 @@ namespace Utility
             string s_ClassMethod = "LogManager.Init()";
             s_AppDataLocalFolder = s_AppDataLocalFolder.Replace("/", "");       //replace all forward slash characters
             s_AppDataLocalFolder = s_AppDataLocalFolder.Replace("\\", "");      //replace all back slash characters
-            s_RecordPath = "C:\\Users\\" + Environment.UserName + "\\Local\\" + s_AppDataLocalFolder + "\\";       //set the record path
+            s_RecordPath = "C:\\Users\\" + Environment.UserName + "\\AppData\\Local\\" + s_AppDataLocalFolder + "\\";       //set the record path
             DirectoryInfo di = new DirectoryInfo(s_RecordPath);     //get directory information about the directory that is going to be created
             //does the target directory exist?
             if(!di.Exists)
@@ -51,6 +51,7 @@ namespace Utility
                 //then the directory does not exist
                 di.Create();        //create the new directory
             }
+            System.Threading.Thread.Sleep(200);     //let the folder be created
             //delete any old files
             List<string> sl_FilesDeleted = Util.DeleteOldFiles(s_RecordPath, 30, "*.txt");     //delete old log files
             foreach (string s_File in sl_FilesDeleted)
@@ -77,12 +78,6 @@ namespace Utility
             lock(o_WriteLock)
             {
                 string s_FileName = s_RecordPath + GetDate() + ".txt";      //get the file name of the file to record to
-                FileInfo fi_ToWrite = new FileInfo(s_FileName);     //get the fileinfo object associated with the path
-                                                                    //determine if the new incoming file exists
-                if (!fi_ToWrite.Exists)
-                {
-                    fi_ToWrite.Create();        //create this new file to write to
-                }
                 //using the stream writer make sure to specify that appending to the file will be enabled
                 using (StreamWriter sw = new StreamWriter(s_FileName, true))
                 {
