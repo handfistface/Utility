@@ -3,4 +3,5 @@ D:\App_Dev\Utility\Utility\bin\Debug\Utility.pdb
 D:\App_Dev\Utility\Utility\obj\Debug\Utility.dll
 D:\App_Dev\Utility\Utility\obj\Debug\Utility.pdb
 D:\App_Dev\Utility\Utility\bin\Debug\Utility.xml
-D:\App_Dev\Utility\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
+D:\App_Dev\Utility\Utility\obj\Debug\Utility.csprojAssemblyReference.cache
+D:\App_Dev\Utility\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache

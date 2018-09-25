@@ -102,6 +102,14 @@
             <param name="s_TableName">The table name to check existance of</param>
             <returns></returns>
         </member>
+        <member name="M:Utility.SqlHelper.CreateDB(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+            Creates a database with the passed string parameter
+            </summary>
+            <param name="sql_Conn">The connection to utilize for the creation</param>
+            <param name="s_DatabaseName">The name of the database</param>
+            <returns></returns>
+        </member>
         <member name="T:Utility.Util">
             <summary>
             Author: John Kirschner

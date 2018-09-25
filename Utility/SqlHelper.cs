@@ -59,10 +59,11 @@ namespace Utility
         {
             bool b_TableExists = false;     //indicates whether the table exists
             //create the command string to check for table existance
-            string s_TableExistance = "SELECT CASE WHEN EXISTS((SELECT * FROM INFORMATION_SCHEUMA.TABLES WHERE table_name = '" + s_TableName + "')) THEN 1 ELSE 0 END";
+            string s_TableExistance = "SELECT CASE WHEN EXISTS((SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE table_name = '" + s_TableName + "')) THEN 1 ELSE 0 END";
             //create the sql command to use for the interaction
             using (SqlCommand sql_TableExistance = new SqlCommand(s_TableExistance, sql_Conn))
             {
+                sql_TableExistance.Connection.Open();       //open the connection before executing the command
                 object o_QueryRes = sql_TableExistance.ExecuteScalar();     //execute the command and get the response
                 //determine if the query succeeded
                 if (o_QueryRes != null)
@@ -80,5 +81,36 @@ namespace Utility
             return b_TableExists;       //return the state of the table existance
         }
         #endregion
+
+        #region public static bool CreateDB(SqlConnection sql_Conn, string s_DatabaseName)
+        /// <summary>
+        /// Creates a database with the passed string parameter
+        /// </summary>
+        /// <param name="sql_Conn">The connection to utilize for the creation</param>
+        /// <param name="s_DatabaseName">The name of the database</param>
+        /// <returns>True indicates that the DB was created, false indicates the DB was not created</returns>
+        public static bool CreateDB(SqlConnection sql_Conn, string s_DatabaseName)
+        {
+            string s_ClassMethod = "SqlHelper.CreateDB()";
+            bool b_CreatedDB = false;       //indicates if the database was created
+            try
+            {
+                LogManager.WriteLine(s_ClassMethod + " -- Database [" + s_DatabaseName + "] does not exist. Creating database.");
+                using (SqlCommand sql_CreateDB = new SqlCommand("CREATE DATABASE " + s_DatabaseName, sql_Conn))
+                {
+                    sql_CreateDB.Connection.Open();     //open the command before processing
+                    sql_CreateDB.ExecuteNonQuery();     //run the command
+                    b_CreatedDB = true;     //set the flag indicating the database was created
+                }
+            }
+            catch (Exception ex)
+            {
+                //catch an exception
+                LogManager.WriteLine(s_ClassMethod + " -- Database creation failed. Returning false");
+            }
+            return b_CreatedDB;
+        }
+        #endregion
+
     }
 }
