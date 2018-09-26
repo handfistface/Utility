@@ -75,41 +75,6 @@
             </summary>
             <returns>A string indicating the current time in the format HH_MM_SS</returns>
         </member>
-        <member name="T:Utility.SqlHelper">
-            <summary>
-            Class: SqlHelper
-            Author: John Kirschner
-            Date: 09-23-2018
-            Class Purpose:
-                This class helps support SQL functionality
-            </summary>
-        </member>
-        <member name="M:Utility.SqlHelper.DoesDBExist(System.Data.SqlClient.SqlConnection,System.String)">
-            <summary>
-            Determines if the passed database name actually exists
-            The passed SqlConnection will be closed after this query
-            </summary>
-            <param name="sql_Conn">The sql connection to use to determine if the DB exists</param>
-            <param name="s_DatabaseName">The name of the DB</param>
-            <returns>True if the DB exists, false if the DB does not exist</returns>
-        </member>
-        <member name="M:Utility.SqlHelper.DoesTableExist(System.Data.SqlClient.SqlConnection,System.String)">
-            <summary>
-            Determines if a table exists for the passed connection, please not that the database will need previously assigned
-            The pass sql_Conn will be closed after the query has been performed
-            </summary>
-            <param name="sql_Conn">The sql connection to test, make sure it has a database selected</param>
-            <param name="s_TableName">The table name to check existance of</param>
-            <returns></returns>
-        </member>
-        <member name="M:Utility.SqlHelper.CreateDB(System.Data.SqlClient.SqlConnection,System.String)">
-            <summary>
-            Creates a database with the passed string parameter
-            </summary>
-            <param name="sql_Conn">The connection to utilize for the creation</param>
-            <param name="s_DatabaseName">The name of the database</param>
-            <returns></returns>
-        </member>
         <member name="T:Utility.Util">
             <summary>
             Author: John Kirschner
